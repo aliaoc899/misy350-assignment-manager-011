@@ -28,11 +28,18 @@ course_data.append(
 for assignment in course_data:
     if "title" in assignment:
         print(f"Title: {assignment['title']}")
+        print("Title",assignment["title"])
 
 
 counter = 0
 for assignmnet in course_data:
     if "title" in assignment and assignment["title"] == "Homework2: Normalization":
-        print("index" , counter)
+        print("index - using counter" , counter)
         break
     counter = counter + 1
+
+
+for index,assignment in enumerate(course_data):
+    if "title" in assignment and assignment["title"] == "Homework2: Normalization":
+        print("index - using enum", index)
+        break
