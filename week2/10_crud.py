@@ -48,20 +48,16 @@ for assignmnet in assignments:
 # Query 2: find the assignmnet with assignmnet title : Intro to DB and display the assignmnet details
 
 #input
-
+...
 #proccess 
 #find an assignment
 exists = False
-
 found_assignmnet = None
-
 for assignmnet in assignments:
     if assignmnet["title"] == "Intro to DB":
         exists = True
         found_assignmnet = assignmnet
         break
-
-
 
 #output
 #display the assignmnet information
